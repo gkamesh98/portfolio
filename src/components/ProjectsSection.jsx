@@ -48,10 +48,40 @@ const projects = [
     title: "Security Optimization Project",
     company: "Sails Software Solutions (Revvity)",
     description:
-      "Fixed codebase vulnerabilities and delivered the project 50% ahead of schedule, securing additional long-term projects for the company.",
+      "Fixed codebase vulnerabilities and delivered the company 50% ahead of schedule, securing additional long-term projects for the company.",
     technologies: [".NET", "Core PHP", "JavaScript"],
     outcome:
       "Enhanced application security and accelerated project delivery by 1.5 months.",
+  },
+  {
+    title: "Multi-Wallet Management Platform",
+    company: "Personal Project",
+    description:
+      "Developed a platform to manage multiple cryptocurrency wallets, integrating real-time pricing data via third-party APIs and visualizing transaction history and price trends with Chart.js. Ensured secure wallet integration using blockchain APIs and deployed on AWS.",
+    technologies: ["React", "Laravel", "Chart.js", "Blockchain", "AWS"],
+    outcome:
+      "Enabled users to efficiently track crypto balances and transactions with real-time insights.",
+    githubLink: "https://github.com/gkamesh98/coindock-ui-v2",
+  },
+  {
+    title: "News Feed",
+    company: "Personal Project",
+    description:
+      "Built a mobile app to deliver personalized news feeds, fetching real-time articles from various sources via APIs. Implemented a clean, swipeable UI for seamless content browsing and offline caching for uninterrupted access.",
+    technologies: ["React Native"],
+    outcome:
+      "Provided users with a tailored news experience accessible on iOS and Android.",
+    githubLink: "https://github.com/gkamesh98/newsFeed",
+  },
+  {
+    title: "Remote Jobs Search",
+    company: "Personal Project",
+    description:
+      "Created a mobile app to search for remote job listings, powered by the remote-jobs-api. Added filters for job type, location, and skills, with a responsive design for cross-platform usability.",
+    technologies: ["React Native", "remote-jobs-api"],
+    outcome:
+      "Simplified remote job hunting with real-time listings on mobile devices.",
+    githubLink: "https://github.com/gkamesh98/remote-jobs",
   },
 ];
 
@@ -80,7 +110,11 @@ const ProjectsSection = () => {
               delay: index * 0.2,
             }}
             whileHover={{ scale: 1.05 }}
-            className="bg-gray-800 p-6 rounded-lg cursor-pointer hover:shadow-xl transition-all"
+            className={`p-6 rounded-lg cursor-pointer hover:shadow-xl transition-all ${
+              project.company === "Personal Project"
+                ? "bg-gray-700 border-2 border-green-500"
+                : "bg-gray-800"
+            }`}
             onClick={() => setSelectedProject(project)}
           >
             <h3 className="text-2xl font-semibold text-green-400 mb-2">

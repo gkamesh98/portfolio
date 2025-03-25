@@ -1,19 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaCloudDownloadAlt } from 'react-icons/fa';
+import { FaGithub, FaCloudDownloadAlt, FaNpm } from 'react-icons/fa';
 
 const openSourceProjects = [
   {
     name: "vite-react-router-dom",
     description: "Automatic route creation for Vite",
     downloads: 100,
-    link: "https://github.com/gkamesh98/vite-react-router-dom"
+    githubLink: "https://github.com/gkamesh98/vite-react-router-dom",
+    npmLink: "https://www.npmjs.com/package/vite-react-router-dom"
   },
   {
     name: "react-router-light",
     description: "Lightweight React Router",
     downloads: 50,
-    link: "https://github.com/gkamesh98/react-router-light"
+    githubLink: "https://github.com/gkamesh98/react-router-light",
+    npmLink: "https://www.npmjs.com/package/react-router-light"
   }
 ];
 
@@ -42,14 +44,24 @@ const OpenSourceSection = () => {
           >
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-2xl font-semibold text-green-400">{project.name}</h3>
-              <motion.a 
-                href={project.link}
-                target="_blank"
-                whileHover={{ scale: 1.2 }}
-                className="text-white hover:text-gray-400"
-              >
-                <FaGithub size={30} />
-              </motion.a>
+              <div className="flex gap-4">
+                <motion.a 
+                  href={project.githubLink}
+                  target="_blank"
+                  whileHover={{ scale: 1.2 }}
+                  className="text-white hover:text-gray-400"
+                >
+                  <FaGithub size={30} />
+                </motion.a>
+                <motion.a 
+                  href={project.npmLink}
+                  target="_blank"
+                  whileHover={{ scale: 1.2 }}
+                  className="text-white hover:text-gray-400"
+                >
+                  <FaNpm size={30} />
+                </motion.a>
+              </div>
             </div>
             
             <p className="text-gray-300 mb-4">{project.description}</p>
