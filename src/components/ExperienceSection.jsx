@@ -59,6 +59,8 @@ const ExperienceSection = () => {
           <motion.div 
             key={exp.company}
             initial={{ opacity: 0, y: 50 }}
+            viewport={{ once: true }}
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             className="bg-gray-700 p-6 rounded-lg"

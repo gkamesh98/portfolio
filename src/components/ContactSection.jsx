@@ -55,6 +55,8 @@ const ContactSection = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
+      viewport={{ once: true }}
+
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       className="min-h-screen bg-gray-800 text-white py-16 px-8 relative"
@@ -72,6 +74,8 @@ const ContactSection = () => {
         {/* Contact Information */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
+          viewport={{ once: true }}
+
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           className="bg-gray-900 p-8 rounded-lg"
@@ -121,6 +125,8 @@ const ContactSection = () => {
         {/* Contact Form */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
+          viewport={{ once: true }}
+
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >

@@ -5,6 +5,7 @@ const AboutMe = () => {
   return (
     <motion.section 
       initial={{ opacity: 0, x: -100 }}
+      viewport={{ once: true }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-8"
@@ -12,6 +13,8 @@ const AboutMe = () => {
       <div className="max-w-4xl grid md:grid-cols-2 gap-8 items-center">
         {/* Bio Card */}
         <motion.div 
+                      viewport={{ once: true }}
+
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -28,6 +31,8 @@ const AboutMe = () => {
         {/* Education Timeline */}
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
+          viewport={{ once: true }}
+
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="relative pl-8 border-l-4 border-blue-500"
@@ -35,6 +40,8 @@ const AboutMe = () => {
           <div className="mb-4">
             <motion.div 
               initial={{ scale: 0 }}
+              viewport={{ once: true }}
+
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.5 }}
               className="absolute left-[-10px] w-5 h-5 bg-blue-500 rounded-full"

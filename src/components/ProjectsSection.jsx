@@ -91,6 +91,8 @@ const ProjectsSection = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
+      viewport={{ once: true }}
+
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       className="min-h-screen bg-gray-900 text-white py-16 px-8"
@@ -104,6 +106,8 @@ const ProjectsSection = () => {
           <motion.div
             key={project.title}
             initial={{ opacity: 0, scale: 0.8 }}
+            viewport={{ once: true }}
+
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
               duration: 0.6,

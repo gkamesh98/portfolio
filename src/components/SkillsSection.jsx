@@ -42,6 +42,7 @@ const skillCategories = [
 const SkillsSection = () => {
   return (
     <motion.section 
+    viewport={{ once: true }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -53,6 +54,7 @@ const SkillsSection = () => {
         {skillCategories.map((category, catIndex) => (
           <motion.div 
             key={category.category}
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: catIndex * 0.2 }}
@@ -76,6 +78,7 @@ const SkillsSection = () => {
                   <div className="bg-gray-600 rounded-full h-3 overflow-hidden">
                     <motion.div 
                       initial={{ width: 0 }}
+                      viewport={{ once: true }}
                       whileInView={{ width: `${skill.level}%` }}
                       transition={{ 
                         duration: 1, 

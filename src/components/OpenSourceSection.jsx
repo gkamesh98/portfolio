@@ -23,6 +23,8 @@ const OpenSourceSection = () => {
   return (
     <motion.section 
       initial={{ opacity: 0 }}
+      viewport={{ once: true }}
+
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       className="min-h-screen bg-gray-900 text-white py-16 px-8"
@@ -34,6 +36,8 @@ const OpenSourceSection = () => {
           <motion.div 
             key={project.name}
             initial={{ opacity: 0, y: 50 }}
+            viewport={{ once: true }}
+
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ 
               duration: 0.6, 
@@ -71,6 +75,8 @@ const OpenSourceSection = () => {
                 <FaCloudDownloadAlt className="mr-2 text-blue-400" />
                 <motion.span
                   initial={{ opacity: 0, scale: 0.8 }}
+                  viewport={{ once: true }}
+
                   whileInView={{ 
                     opacity: 1, 
                     scale: 1,
@@ -88,6 +94,8 @@ const OpenSourceSection = () => {
 
       <motion.div 
         initial={{ opacity: 0 }}
+        viewport={{ once: true }}
+
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
         className="text-center mt-12"
