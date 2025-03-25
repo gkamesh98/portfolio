@@ -1,12 +1,37 @@
-# React + Vite
+# Kamesh Gullapalli - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Banner](https://via.placeholder.com/1200x400.png?text=Kamesh+Gullapalli+Portfolio)  
+*Showcasing my journey as a Senior Software Developer.*
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is my personal portfolio website, built to highlight my professional experience, featured projects, technical skills, and open-source contributions. As a Senior Software Developer with over 4 years of experience at Sails Software Solutions, I’ve worked on diverse projects ranging from meeting management tools to cryptocurrency platforms. This site also showcases my personal projects and open-source work, reflecting my passion for coding and innovation.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Experience**: A detailed timeline of my role at Sails Software Solutions, including client projects like Funcon, Loqbox, and more.
+- **Projects**: A gallery of key professional and personal projects with interactive modals and GitHub links.
+- **Skills**: Visual representation of my technical expertise in languages, frameworks, and tools.
+- **Open Source**: Highlights my npm packages (`vite-react-router-dom`, `react-router-light`) with GitHub and npm links.
+- **Contact**: Links to connect with me via email, LinkedIn, and GitHub.
+- **Animations**: Smooth transitions and hover effects powered by Framer Motion.
+
+## Tech Stack
+
+- **Frontend**: React.js
+- **Animations**: Framer Motion
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
+- **Deployment**: Vercel (or specify your preferred platform)
+
+## Installation
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Steps
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/gkamesh98/portfolio.git
+   cd portfolio
